@@ -26,6 +26,6 @@ Testbench created and verified.
 Implemented D Flip-Flop.
 Testbench created and verified.
 
-**Universal Shift Register**
+**Universal Shift Register:**
 Implemented Universal Shift Register.
 Testbench created and verified.
