@@ -15,7 +15,7 @@ The design consists of:
 
 The encoder generates the binary representation of the active input line.
 
-**Verification:**
+### Verification
 A Verilog testbench was developed to verify the encoder operation by applying different input combinations and observing the corresponding encoded outputs.
 <img width="1256" height="621" alt="encoder" src="https://github.com/user-attachments/assets/daae41c0-1824-411d-99ed-05fe4aac04ce" />
 
@@ -31,7 +31,7 @@ The design consists of:
 
 The SR Flip-Flop can set, reset, hold its state, or enter an invalid condition depending on the input combination.
 
-**Verification:**
+### Verification
 A Verilog testbench was created to verify the behavior of the SR Flip-Flop under different input conditions.
 <img width="1271" height="615" alt="sr_flipflop" src="https://github.com/user-attachments/assets/996eb2c5-43be-4edd-9a94-72997acb4758" />
 
@@ -48,7 +48,7 @@ The design consists of:
 
 The flip-flop eliminates the invalid state present in the SR Flip-Flop and serves as a basic storage element in digital systems.
 
-**Verification:**
+### Verification
 A Verilog testbench was developed to verify the operation of the D Flip-Flop by applying different data inputs and clock transitions.
 <img width="1255" height="558" alt="dff" src="https://github.com/user-attachments/assets/1c892f4a-3545-457a-8cb7-91a1a54f45a3" />
 
@@ -68,7 +68,7 @@ The design consists of:
 
 The Universal Shift Register provides flexibility in data movement and storage operations within digital systems.
 
-**Verification:**
+### Verification
 A Verilog testbench was developed to verify all operating modes of the Universal Shift Register, including shifting and parallel loading operations.
 <img width="1256" height="603" alt="usr (2)" src="https://github.com/user-attachments/assets/f7b503ab-5a16-4467-88a9-e31da5e79a3e" />
 
