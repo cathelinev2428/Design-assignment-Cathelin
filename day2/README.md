@@ -1,10 +1,10 @@
 ## Day 2
 
-### Objective
+## Objective
 
 The objective of Day 2 was to understand the design and implementation of basic combinational and sequential circuits using Verilog HDL. The functionality of each design was verified through simulation in Vivado.
 
-### 4×2 Encoder
+## 4×2 Encoder
 
 A 4×2 Encoder was implemented using Verilog HDL. The encoder converts one active input among four input lines into a corresponding 2-bit binary code at the output.
 
@@ -19,7 +19,7 @@ The encoder generates the binary representation of the active input line.
 A Verilog testbench was developed to verify the encoder operation by applying different input combinations and observing the corresponding encoded outputs.
 <img width="1256" height="621" alt="encoder" src="https://github.com/user-attachments/assets/daae41c0-1824-411d-99ed-05fe4aac04ce" />
 
-### SR Flip-Flop
+## SR Flip-Flop
 
 An SR (Set-Reset) Flip-Flop was implemented using Verilog HDL. The flip-flop stores a single bit of information and changes its state based on the Set and Reset inputs.
 
@@ -36,7 +36,7 @@ A Verilog testbench was created to verify the behavior of the SR Flip-Flop under
 <img width="1271" height="615" alt="sr_flipflop" src="https://github.com/user-attachments/assets/996eb2c5-43be-4edd-9a94-72997acb4758" />
 
 
-### D Flip-Flop
+## D Flip-Flop
 
 A D (Data) Flip-Flop was implemented using Verilog HDL. The D Flip-Flop stores the input data and transfers it to the output on the triggering edge of the clock signal.
 
@@ -54,7 +54,7 @@ A Verilog testbench was developed to verify the operation of the D Flip-Flop by 
 
 
 
-### Universal Shift Register
+## Universal Shift Register
 
 A Universal Shift Register was implemented using Verilog HDL. The register supports multiple operations including hold, shift left, shift right, and parallel loading of data.
 
