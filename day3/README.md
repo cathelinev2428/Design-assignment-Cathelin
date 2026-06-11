@@ -1,4 +1,4 @@
-## Day3
+## Day 3
 
 ## Sequence Detector (1110 Overlapping)
 
