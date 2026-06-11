@@ -1,66 +1,87 @@
 ## Day 3
 
+### Objective
+
+The objective of Day 3 was to understand Finite State Machine (FSM) design and FIFO-based data buffering techniques using Verilog HDL. The designs were verified through simulation in Vivado.
+
 ## Sequence Detector (1110 Overlapping)
 
-Implemented a sequence detector in Verilog using FSM to detect the pattern 1110 with overlapping capability. Designed the corresponding testbench and verified the functionality through simulation waveforms.
+A sequence detector was implemented using a Finite State Machine (FSM) to detect the binary sequence **1110** with overlapping capability. The detector continuously monitors the input stream and generates an output whenever the specified sequence is detected.
+
+The design consists of:
+
+* Clock input (`clk`)
+* Reset input (`rst`)
+* Serial data input
+* Detection output
+
+The FSM transitions through different states based on the incoming bit stream and supports overlapping detection, allowing consecutive occurrences of the sequence to be identified efficiently.
+
+**Verification:**
+A Verilog testbench was developed to verify the sequence detector. Various input sequences were applied, and the simulation waveform confirmed successful detection of the pattern **1110** with overlapping operation.
+
 <img width="1609" height="624" alt="sequencedetector" src="https://github.com/user-attachments/assets/ee457150-4768-4cd2-9174-2a46e15cb001" />
 
 ## Face Sensor Data Transfer Using FIFO
 
-**Objective**
-To transfer 8-bit sensor data from a high-speed face module to a slow output module using a FIFO buffer.
+A FIFO-based data transfer system was implemented to transfer 8-bit sensor data from a high-speed face sensor module to a slower output module. The FIFO acts as an intermediate buffer, preventing data loss and enabling reliable communication between modules operating at different speeds.
 
-**Description**
-This project consists of three modules:
+The design consists of three main modules:
 
-1. Face Module
-2. FIFO
-3. Module Out
-
-The Face Module receives 8-bit sensor input data and generates output on every positive edge of the clock. Since the face module operates at a higher speed than the output device, a FIFO is used as an intermediate buffer.
-
-The FIFO stores incoming data and provides synchronized data transfer between the fast producer and slow consumer.
-
-The Module Out acts as a slow device and updates its output only after every three clock cycles. This demonstrates how FIFO can be used to prevent data loss when transferring data between modules operating at different speeds.
-
-## Modules
 ## Face Module
-- Input : clk, sensor_in[7:0]
-- Output : sensor_out[7:0]
-- Captures sensor data on every positive clock edge.
 
-## FIFO
-- Stores 8-bit data.
-- Supports write and read operations.
-- Provides temporary storage between modules.
-- <img width="1621" height="639" alt="fifo" src="https://github.com/user-attachments/assets/1bdcf0a5-8715-4351-9978-ec361fae5468" />
-
-
-## Module Out
-- Receives data from FIFO.
-- Generates output after every three clock cycles.
-- Simulates a slow device.
-
-## Top Module
-- Integrates Face Module, FIFO and Module Out.
-- Provides complete data flow from sensor input to final output.
-- <img width="1623" height="632" alt="top_module" src="https://github.com/user-attachments/assets/5c582282-870f-4831-9389-a8f064ff4b93" />
-
+The Face Module receives 8-bit sensor data and captures it on every positive edge of the clock.
 
 **Inputs**
-- clk
-- rst
-- sensor_in[7:0]
+
+* clk
+* sensor_in[7:0]
 
 **Output**
-- d_out[7:0]
 
-**Files**
-- face_module.v
-- fi_fo.v
-- module_out.v
-- top_module.v
-- top_module_tb.v
+* sensor_out[7:0]
 
-**Result:**
-The design was implemented and simulated in Vivado. The FIFO successfully buffered data between the high-speed face module and the slow output module, demonstrating reliable data transfer between modules operating at different speeds.
+## FIFO
+
+The FIFO provides temporary storage for incoming sensor data and supports synchronized read and write operations.
+
+Features:
+
+* 8-bit data storage
+* Read and write functionality
+* Temporary buffering between producer and consumer modules
+
+<img width="1621" height="639" alt="fifo" src="https://github.com/user-attachments/assets/1bdcf0a5-8715-4351-9978-ec361fae5468" />
+
+## Module Out
+
+The Module Out acts as a slow output device. It reads data from the FIFO and updates its output after every three clock cycles, simulating a slower processing unit.
+
+## Top Module
+
+The Top Module integrates the Face Module, FIFO, and Module Out to provide a complete data transfer system.
+
+Features:
+
+* Connects all modules together
+* Controls data flow from sensor input to output
+* Demonstrates FIFO-based synchronization
+
+<img width="1623" height="632" alt="top_module" src="https://github.com/user-attachments/assets/5c582282-870f-4831-9389-a8f064ff4b93" />
+
+**Inputs**
+
+* clk
+* rst
+* sensor_in[7:0]
+
+**Output**
+
+* d_out[7:0]
+
+**Verification:**
+A Verilog testbench was used to verify the complete system. Sensor data generated by the Face Module was successfully stored in the FIFO and later transferred to the slower output module without data loss.
+
+**Conclusion**
+
+The Sequence Detector and FIFO-based Face Sensor Data Transfer System were successfully implemented and verified using simulation in Vivado. These projects provided practical experience with FSM design, sequential logic, memory buffering, and data transfer between modules operating at different speeds.
