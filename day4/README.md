@@ -31,7 +31,7 @@ When the write enable signal is asserted, data is written into the selected memo
 
 - data_out[7:0]
 
-**Verification**
+### Verification
 
 A Verilog testbench was developed to verify both write and read operations. Different data values were written into memory locations and later read back to confirm correct functionality.
 <img width="1645" height="665" alt="block_ram_8x8" src="https://github.com/user-attachments/assets/7b280cab-15f4-4a8e-ae5a-56ce2448c8b2" />
