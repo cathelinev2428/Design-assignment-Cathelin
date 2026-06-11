@@ -1,6 +1,6 @@
 ## Day 3
 
-### Objective
+## Objective
 
 The objective of Day 3 was to understand Finite State Machine (FSM) design and FIFO-based data buffering techniques using Verilog HDL. The designs were verified through simulation in Vivado.
 
