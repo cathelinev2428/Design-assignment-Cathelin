@@ -1,10 +1,10 @@
 ## Day 4
 
-**Objective**
+## Objective
 
 The objective of Day 4 was to understand the working of Block Memory Generator IP and model a Block RAM using Verilog HDL. The design was verified through simulation and synthesis in Vivado.
 
-### Block RAM 8x8
+## Block RAM 8x8
 
 A Block RAM (BRAM) was implemented using Verilog HDL. The memory supports read and write operations and stores 8-bit data values. An active-low asynchronous reset is used to initialize the memory contents.
 
