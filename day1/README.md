@@ -4,7 +4,7 @@
 
 The objective of Day 1 was to understand the design and implementation of combinational arithmetic circuits using Verilog HDL. The designs were verified through simulation in Vivado.
 
-### 4-Bit Ripple Carry Adder
+## 4-Bit Ripple Carry Adder
 
 A 4-bit Ripple Carry Adder (RCA) was implemented using Verilog HDL. The adder performs binary addition of two 4-bit inputs along with a carry input. The carry generated from each full adder stage propagates to the next stage, resulting in the name "Ripple Carry Adder."
 
@@ -22,7 +22,7 @@ A Verilog testbench was developed to verify the functionality of the Ripple Carr
 
 <img width="1403" height="746" alt="rca" src="https://github.com/user-attachments/assets/af2313a5-e359-4be9-ae66-6b7bcf6ff189" />
 
-### BCD Adder
+## BCD Adder
 
 A Binary-Coded Decimal (BCD) Adder was implemented using Verilog HDL. The circuit performs decimal addition of two BCD digits along with an optional carry input. Whenever the binary sum exceeds 9, a correction value of 6 is added to obtain a valid BCD result.
 
