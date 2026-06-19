@@ -5,7 +5,7 @@
 // 
 // Create Date: 16.06.2026 10:29:11
 // Design Name: 
-// Module Name: fa
+// Module Name: apb_slave
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
