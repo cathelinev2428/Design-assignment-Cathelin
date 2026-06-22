@@ -52,7 +52,7 @@ The repository covers fundamental digital circuits, sequential and combinational
 
 * APB Protocol
 
-### Project:
+### Project :
 
 ### CNN Inference Accelerator
 
